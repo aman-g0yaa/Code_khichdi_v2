@@ -16,6 +16,12 @@ repositories {
 }
 
 dependencies {
+
+
+    // http dependecy
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+
+
     // Use JUnit Jupiter for testing.
     testImplementation libs.junit.jupiter
 
