@@ -3,12 +3,34 @@
  */
 package org.example;
 
-public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+import java.io.IOException;
+import java.util.List;
 
-    public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+import retrofit2.Call;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+
+public class App {
+    public static void main(String[] args) throws IOException {
+        
+        String url = "https://mocki.io/";
+        //v1/f2772c60-cb58-4a0f-807c-1eb7d4ed623d
+
+        Retrofit retrofit = new Retrofit.Builder()
+        .baseUrl(url)
+        .addConverterFactory(GsonConverterFactory.create())
+        .build();
+
+
+        todoService a = retrofit.create(todoService.class);
+        
+        System.out.println(a.get("f2772c60-cb58-4a0f-807c-1eb7d4ed623d").execute().body().toString());
+
+        
+        
+
+
+
+
     }
 }
