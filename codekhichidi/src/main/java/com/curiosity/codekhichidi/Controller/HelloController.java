@@ -44,15 +44,20 @@ public class HelloController {
 
     @PutMapping("path/{id}")
     public String putProblem(@PathVariable String id, @RequestBody String entity) {
-        // TODO: process PUT request
 
-        return entity;
+        if (problems.size() > Integer.parseInt(id)) {
+            problems.set(Integer.parseInt(id), entity);
+            return entity;
+        }
+        Problem problem = new Problem();
+        problem.setProblem(entity);
+        return postProblem(problem);
+
     }
 
     @PatchMapping("path/{id}")
     public String patchProblem(@PathVariable String id, @RequestBody String entity) {
-        // TODO: process PUT request
-
+        problems.set(Integer.parseInt(id), entity);
         return entity;
     }
 
