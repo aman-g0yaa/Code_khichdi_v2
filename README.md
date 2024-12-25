@@ -3,18 +3,8 @@
 
 ## Setup 
 
-Create Build
+Create new Clean Build and Run 
 
-``` grovy 
-./gradlew clean build
-```
-
-Run the project 
-```grovy
-./gradlew run
-```
-
-Refresh newly added Dependecies 
-```
-gradle build --refresh-dependencies
+``` groovy
+ ./gradlew bootRun
 ```
