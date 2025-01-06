@@ -1,10 +1,10 @@
-package com.curiosity.codekhichidi;
+package com.curiosity.oj;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CodekhichidiApplicationTests {
+class OjApplicationTests {
 
 	@Test
 	void contextLoads() {

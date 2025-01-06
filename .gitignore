@@ -5,6 +5,7 @@
 .vscode/
 *.iml
 *.log
+spring.code-workspace
 
 # Gradle
 .gradle/

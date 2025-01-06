@@ -1,13 +1,13 @@
-package com.curiosity.codekhichidi;
+package com.curiosity.oj;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CodekhichidiApplication {
+public class OjApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CodekhichidiApplication.class, args);
+		SpringApplication.run(OjApplication.class, args);
 	}
 
 }
